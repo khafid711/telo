@@ -1,0 +1,10 @@
+def calculate_transaction_fee(self, amount):
+    fee = amount * self.transaction_fee_rate
+    return fee
+
+def calculate_minimum_balance_fee(self, current_balance):
+    if current_balance < self.minimum_balance:
+        fee = self.minimum_balance - current_balance
+        return fee
+    else:
+        return 0
