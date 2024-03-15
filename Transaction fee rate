@@ -1,0 +1,10 @@
+calculator = BankingFeeCalculator(transaction_fee_rate, minimum_balance)
+
+transaction_fee = calculator.calculate_transaction_fee(amount_transacted)
+minimum_balance_fee = calculator.calculate_minimum_balance_fee(balance)
+
+total_fee = transaction_fee + minimum_balance_fee
+
+print("Transaction Fee: ${:.2f}".format(transaction_fee))
+print("Minimum Balance Fee: ${:.2f}".format(minimum_balance_fee))
+print("Total Fee: ${:.2f}".format(total_fee))
